@@ -1,30 +1,36 @@
 package cn.itcast_02;
 
 /*
- * Ìí¼Ó¹¦ÄÜ£º
- * public StringBuffer append(String str)£º×·¼ÓÊı¾İ£¬ÍùÒÑÓĞÊı¾İµÄºóÃæ¡£
- * public StringBuffer insert(int offset,String str):²åÈëÊı¾İ£¬ÍùÖ¸¶¨Î»ÖÃÌí¼ÓÊı¾İ¡£
+ * æ·»åŠ åŠŸèƒ½ï¼š
+ * public StringBuffer append(String str)ï¼šè¿½åŠ æ•°æ®ï¼Œå¾€å·²æœ‰æ•°æ®çš„åé¢ã€‚
+ * public StringBuffer insert(int offset,String str):æ’å…¥æ•°æ®ï¼Œå¾€æŒ‡å®šä½ç½®æ·»åŠ æ•°æ®ã€‚
  */
 public class StringBufferDemo {
 	public static void main(String[] args) {
-		// ´´½¨×Ö·û´®»º³åÇø¶ÔÏó
+		// åˆ›å»ºå­—ç¬¦ä¸²ç¼“å†²åŒºå¯¹è±¡
 		StringBuffer sb = new StringBuffer();
 
-		// µ÷ÓÃ
-		// public StringBuffer append(String str)£º×·¼ÓÊı¾İ£¬ÍùÒÑÓĞÊı¾İµÄºóÃæ¡£
+		// è°ƒç”¨
+		// public StringBuffer append(String str)ï¼šè¿½åŠ æ•°æ®ï¼Œå¾€å·²æœ‰æ•°æ®çš„åé¢ã€‚
 		// StringBuffer sb2 = sb.append("hello");
 		// System.out.println(sb == sb2); // true
 		// System.out.println("sb:" + sb);
 		// System.out.println("sb2:" + sb2);
+		/*
+			true
+			sb:hello
+			sb2:hello
+		*/
+		
 
 		// sb.append("hello");
 		// sb.append("world");
 		// sb.append("java");
 
-		// Á´Ê½±à³Ì
+		// é“¾å¼ç¼–ç¨‹
 		sb.append("hello").append("world").append("java");
 
-		// public StringBuffer insert(int offset,String str):²åÈëÊı¾İ£¬ÍùÖ¸¶¨Î»ÖÃÌí¼ÓÊı¾İ¡£
+		// public StringBuffer insert(int offset,String str):æ’å…¥æ•°æ®ï¼Œå¾€æŒ‡å®šä½ç½®æ·»åŠ æ•°æ®ã€‚
 		sb.insert(5, "ak47");
 
 		System.out.println("sb:" + sb);
